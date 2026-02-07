@@ -62,7 +62,9 @@ Rules:
                 st.subheader("📖 Explanation")
                 st.write(response.text)
 
-            except Exception as e:
-                st.error("Something went wrong while generating explanation.")
+           except Exception as e:
+    st.error("Gemini error:")
+    st.error(str(e))
+
     else:
         st.warning("Please upload an image or enter text.")
