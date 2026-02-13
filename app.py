@@ -7,7 +7,6 @@ st.set_page_config(page_title="StudyBuddy AI", layout="centered")
 # Title
 st.title("📘 StudyBuddy AI – Structured Learning Explainer")
 st.write("Upload study content and get a simple, step-by-step explanation.")
-
 # Load API key
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
