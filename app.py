@@ -14,7 +14,6 @@ if not api_key:
     st.stop()
 # Configure Gemini
 genai.configure(api_key=api_key)
-
 # ✅ CONFIRMED WORKING MODEL (from your logs)
 model = genai.GenerativeModel("models/gemini-flash-latest")
 
