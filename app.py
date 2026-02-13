@@ -12,7 +12,6 @@ api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
     st.error("GEMINI_API_KEY not found in Streamlit Secrets.")
     st.stop()
-
 # Configure Gemini
 genai.configure(api_key=api_key)
 
